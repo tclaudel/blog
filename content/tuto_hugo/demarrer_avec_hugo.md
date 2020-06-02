@@ -155,7 +155,7 @@ Normalement vous obtenez un site vide mais avec le thème visible.
 Création du premier article
 ==
 
-
+La commande principale pour créer du contenu est la suivant 
 
 
 
