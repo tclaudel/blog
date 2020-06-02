@@ -60,7 +60,7 @@ il aura cette architecture :
 ```
 Faisons le tour des dossiers principalement utilisés
 - **archetype**  
-Ce dossier contient les modeles utilisé pour la création de vos fichiers
+Ce dossier contient les modèles utilisé pour la création de vos fichiers
 le fichier `default.md` : 
 > ```
 > ---
@@ -72,20 +72,20 @@ le fichier `default.md` :
 Ce fichier servira à déterminer le *Front Matter* (entête de formatage)  
 de chacun des fichiers que vous allez créer.
 - **assets**  
-Quoi un dossier assets ? Je ne l'ai pas de mon coté, pas de panique, c'est un dossier
-optionnel, où vous pourrez mettre vos photos etc.
+Quoi un dossier assets ? Je ne l'ai pas de mon côté, pas de panique, c'est un dossier
+optionnel, où vous pourrez mettre vos photos, etc.
 - **config**  
 C'est ici que vous trouverez tous les fichiers de configurations JSON, YAML ou TOML.
 - **content**
 C'est le dossier principal du projet, vous écrirez tout ce qui sera publié sur ce site ici, 
-vous aurez des catégories représentée par les différents dossier ci-dessous par exemple content/articles, 
+vous aurez des catégories représentée par les différents dossiers ci-dessous par exemple content/articles, 
 content/contact
 
 Pour vérifier que tout c'est bien passé nous allons lancer notre site pour la première fois !  
 ```bash
 hugo server
 ```
-vous voir la construction de votre site :
+Vous puvez voir la construction de votre site :
 ```bash
 Building sites … WARN 2020/06/02 15:29:01 found no layout file for "HTML" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
 WARN 2020/06/02 15:29:01 found no layout file for "HTML" for kind "taxonomyTerm": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
@@ -118,13 +118,13 @@ les WARN affichés dans votre console, ils vous indiquent qu'il ne trouve pas de
 Installer un template
 ==
 Nous allons découvrir comment ajouter un thème à votre site en HUGO, vous pouvez en trouver de partout sur internet,
-cependant je vous conseille de trouver le votre sur [https://themes.gohugo.io/](https://themes.gohugo.io/), c'est le 
+cependant je vous conseille de trouver le vôtre sur [https://themes.gohugo.io/](https://themes.gohugo.io/), c'est le 
 répertoire officiel des thèmes HUGO, c'est un gage de compatibilité et de qualité. choisissez en un et cliquez sur
-download, vos allez vous retrouver sur le dossier *github* ou est présent le code source du thème, pas de panique vous
-aurez juste besoin de récuperer cet url.
+download, vos allez-vous retrouver sur le dossier *github* où est présent le code source du thème, pas de panique vous
+aurez juste besoin de récupérer cet url.
 pour cet exemple nous allons utiliser : [https://github.com/budparr/gohugo-theme-ananke](https://github.com/budparr/gohugo-theme-ananke)
 Pour installer ce thème :
-- Rendez vous à la racine de votre projet
+- Rendez-vous à la racine de votre projet
 - Rentre les commandes suivantes en remplaçant l'URL par celle de la page github : 
 ```bash
 # Initialisation de git
@@ -150,7 +150,7 @@ Pour voir le résultat :
 ```bash
 hugo server
 ```
-Normalement vous obtener un site vide mais avec le thème visible.
+Normalement vous obtenez un site vide mais avec le thème visible.
 Création du premier article
 ==
 
