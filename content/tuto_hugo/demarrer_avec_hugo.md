@@ -12,10 +12,12 @@ HUGO est un générateur de sites web statique open-source développé en Go.
 Le but de dernier est d'être le plus rapide et flexible possible et de rendre le 
 développement de ce dernier agréable.
 
+
 Installer HUGO
 ==
 #### Installer sous Linux :
 ```bash
+  wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
   mkdir $HOME/src
   cd $HOME/src
   git clone https://github.com/gohugoio/hugo.git
@@ -29,17 +31,18 @@ brew install hugo
 ```
 
 #### Vérification  
-Pour voir si tout c'est bien passer, rentrz la commande : 
+Pour voir si tout c'est bien passer, rentrez la commande : 
 ```
 hugo version
 ```
 Elle devrait renvoyer quelque chose comme : `Hugo Static Site ######`
 
-### Créez votre premier site !
-
+Créez votre premier site !
+==
 Une fois HUGO installé il vous suffit de créer votre site avec la commande : 
 ```
 hugo new site nouveau_site
+cd nouveau_site
 ```
 Cette commande va vous créer un nouveau dossier nommé :  
 `nouveau_site`  
@@ -55,7 +58,7 @@ il aura cette architecture :
 ├── static
 └── themes
 ```
-Nous allons faire le tour de ces différents dossier :  
+Faisons le tour des dossiers principalement utilisés
 - **archetype**  
 Ce dossier contient les modeles utilisé pour la création de vos fichiers
 le fichier `default.md` : 
@@ -69,7 +72,93 @@ le fichier `default.md` :
 Ce fichier servira à déterminer le *Front Matter* (entête de formatage)  
 de chacun des fichiers que vous allez créer.
 - **assets**  
-Quoi un dossier assets ? Je ne lái pas de mon coté, pas de panique, c'est un dossier 
+Quoi un dossier assets ? Je ne l'ai pas de mon coté, pas de panique, c'est un dossier
+optionnel, où vous pourrez mettre vos photos etc.
+- **config**  
+C'est ici que vous trouverez tous les fichiers de configurations JSON, YAML ou TOML.
+- **content**
+C'est le dossier principal du projet, vous écrirez tout ce qui sera publié sur ce site ici, 
+vous aurez des catégories représentée par les différents dossier ci-dessous par exemple content/articles, 
+content/contact
+
+Pour vérifier que tout c'est bien passé nous allons lancer notre site pour la première fois !  
+```bash
+hugo server
+```
+vous voir la construction de votre site :
+```bash
+Building sites … WARN 2020/06/02 15:29:01 found no layout file for "HTML" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN 2020/06/02 15:29:01 found no layout file for "HTML" for kind "taxonomyTerm": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN 2020/06/02 15:29:01 found no layout file for "HTML" for kind "taxonomyTerm": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+
+                   | EN  
+-------------------+-----
+  Pages            |  3  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  0  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Built in 2 ms
+Watching for changes in /home/tclaudel/blog/nouveau_site/{archetypes,content,data,layouts,static}
+Watching for config changes in /home/tclaudel/blog/nouveau_site/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+```
+rendez vous sur l'addresse localhost indiquée, par défaut : [http://localhost:1313/](http://localhost:1313/).
+Elle est pas belle cette magnifique page blanche ? Pas de soucis à vous faire c'est tout à fait normal, regardez plus haut
+les WARN affichés dans votre console, ils vous indiquent qu'il ne trouve pas de template, alors ajoutons lui en un !
+
+Installer un template
+==
+Nous allons découvrir comment ajouter un thème à votre site en HUGO, vous pouvez en trouver de partout sur internet,
+cependant je vous conseille de trouver le votre sur [https://themes.gohugo.io/](https://themes.gohugo.io/), c'est le 
+répertoire officiel des thèmes HUGO, c'est un gage de compatibilité et de qualité. choisissez en un et cliquez sur
+download, vos allez vous retrouver sur le dossier *github* ou est présent le code source du thème, pas de panique vous
+aurez juste besoin de récuperer cet url.
+pour cet exemple nous allons utiliser : [https://github.com/budparr/gohugo-theme-ananke](https://github.com/budparr/gohugo-theme-ananke)
+Pour installer ce thème :
+- Rendez vous à la racine de votre projet
+- Rentre les commandes suivantes en remplaçant l'URL par celle de la page github : 
+```bash
+# Initialisation de git
+git init
+# Importation du thème dans notre dossier thème
+git submodule add https://github.com/budparr/gohugo-theme-ananke themes/ananke
+```
+A présent nous allons toucher à la configuration pour indiquer le thème. À la racine du projet, il y a un fichier `config.toml`
+c'est le fichier de configuration principal de notre site :  `cat ./config.toml`
+```bash
+baseURL = "http://example.org/" # Nom de l'hote pour la mise en production
+languageCode = "en-us"
+title = "My New Hugo Site"
+```
+Nous allons changer le contenu par : 
+```bash
+baseURL = "http://example.org/" # Nom de l'hote pour la mise en production
+languageCode = "fr" # Passage du site en français
+title = "Mon site" # Changement du titre
+theme = "ananke" # nom du dossier du theme tout juste importé
+```
+Pour voir le résultat :
+```bash
+hugo server
+```
+Normalement vous obtener un site vide mais avec le thème visible.
+Création du premier article
+==
+
+
+
+
+
+
 
 
 
