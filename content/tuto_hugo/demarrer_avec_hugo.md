@@ -151,8 +151,10 @@ Pour voir le résultat :
 hugo server
 ```
 Normalement vous obtenez un site vide mais avec le thème visible.
+
 Création du premier article
 ==
+
 
 
 
