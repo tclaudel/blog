@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+    <title>Démarrer avec HUGO · Blog tclaudel</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="https://tclaudel.herokuapp.com/style.main.min.02e0953f3eb6cbf2837687bc4b6fa70a1b7913e7ea2260c1a41d1f0a9cf10972.css" />
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://tclaudel.herokuapp.com/">Blog tclaudel</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+</div>
+</div></header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post  no-image ">
+
+            <header class="post-full-header">
+
+                
+
+                <h1 class="post-full-title">Démarrer avec HUGO</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        
+
+                        <section class="post-full-byline-meta">
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-126-06">2 June 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 2 minute de lecture</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <h1 id="démarrer-avec-hugo">Démarrer avec HUGO</h1>
+<h3 id="hugo-quest-ce-que-cest-">HUGO, qu&rsquo;est-ce que c&rsquo;est ?</h3>
+<p>HUGO est un générateur de sites web statique open-source développé en Go.
+Le but de dernier est d&rsquo;être le plus rapide et flexible possible et de rendre le
+développement de ce dernier agréable.</p>
+<h1 id="installer-hugo">Installer HUGO</h1>
+<h4 id="installer-sous-linux-">Installer sous Linux :</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  mkdir $HOME/src
+  cd $HOME/src
+  git clone https://github.com/gohugoio/hugo.git
+  cd hugo
+  go install --tags extended
+</code></pre></div><h4 id="installer-sous-macos-">Installer sous MacOs :</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install hugo
+</code></pre></div><h4 id="vérification">Vérification</h4>
+<p>Pour voir si tout c&rsquo;est bien passer, rentrz la commande :</p>
+<pre><code>hugo version
+</code></pre><p>Elle devrait renvoyer quelque chose comme : <code>Hugo Static Site ######</code></p>
+<h3 id="créez-votre-premier-site-">Créez votre premier site !</h3>
+<p>Une fois HUGO installé il vous suffit de créer votre site avec la commande :</p>
+<pre><code>hugo new site nouveau_site
+</code></pre><p>Cette commande va vous créer un nouveau dossier nommé :<br>
+<code>nouveau_site</code><br>
+il aura cette architecture :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre></div><p>Nous allons faire le tour de ces différents dossier :</p>
+<ul>
+<li><strong>archetype</strong><br>
+Ce dossier contient les modeles utilisé pour la création de vos fichiers
+le fichier <code>default.md</code> :</li>
+</ul>
+<blockquote>
+<pre><code>---
+title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+---
+</code></pre></blockquote>
+<p>Ce fichier servira à déterminer le <em>Front Matter</em> (entête de formatage)<br>
+de chacun des fichiers que vous allez créer.</p>
+<ul>
+<li><strong>assets</strong><br>
+Quoi un dossier assets ? Je ne lái pas de mon coté, pas de panique, c&rsquo;est un dossier</li>
+</ul>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+
+            
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://tclaudel.herokuapp.com/">Blog tclaudel</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://tclaudel.herokuapp.com/">Latest Posts</a>
+                    
+                    
+                    
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
