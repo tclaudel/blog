@@ -76,8 +76,8 @@
                 <div class="post-content">
                     <h1 id="démarrer-avec-hugo">Démarrer avec HUGO</h1>
 <h3 id="hugo-quest-ce-que-cest-">HUGO, qu&rsquo;est-ce que c&rsquo;est ?</h3>
-<p>HUGO est un générateur de sites web statique open-source développé en Go.
-Le but de dernier est d&rsquo;être le plus rapide et flexible possible et de rendre le
+<p>HUGO est un générateur de site web statique open-source développé en Go.
+Le but de ce dernier est d&rsquo;être le plus rapide et flexible possible et de rendre le
 développement de ce dernier agréable.</p>
 <h1 id="installer-hugo">Installer HUGO</h1>
 <h4 id="installer-sous-linux-">Installer sous Linux :</h4>
@@ -167,7 +167,7 @@ les WARN affichés dans votre console, ils vous indiquent qu&rsquo;il ne trouve 
 <h1 id="installer-un-template">Installer un template</h1>
 <p>Nous allons découvrir comment ajouter un thème à votre site en HUGO, vous pouvez en trouver de partout sur internet,
 cependant je vous conseille de trouver le vôtre sur <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>, c&rsquo;est le
-répertoire officiel des thèmes HUGO, c&rsquo;est un gage de compatibilité et de qualité. choisissez en un et cliquez sur
+répertoire officiel des thèmes HUGO, c&rsquo;est un gage de compatibilité et de qualité. Choisissez en un et cliquez sur
 download, vos allez-vous retrouver sur le dossier <em>github</em> où est présent le code source du thème, pas de panique vous
 aurez juste besoin de récupérer cet url.
 pour cet exemple nous allons utiliser : <a href="https://github.com/budparr/gohugo-theme-ananke">https://github.com/budparr/gohugo-theme-ananke</a>
@@ -182,14 +182,14 @@ git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke themes/ananke
 </code></pre></div><p>A présent nous allons toucher à la configuration pour indiquer le thème. À la racine du projet, il y a un fichier <code>config.toml</code>
 c&rsquo;est le fichier de configuration principal de notre site :  <code>cat ./config.toml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
-languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
-title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
 </code></pre></div><p>Nous allons changer le contenu par :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
-languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fr&#34;</span> <span style="color:#75715e"># Passage du site en français</span>
-title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mon site&#34;</span> <span style="color:#75715e"># Changement du titre</span>
-theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ananke&#34;</span> <span style="color:#75715e"># nom du dossier du theme tout juste importé</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;fr&#34;</span> <span style="color:#75715e"># Passage du site en français</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Mon site&#34;</span> <span style="color:#75715e"># Changement du titre</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;ananke&#34;</span> <span style="color:#75715e"># nom du dossier du theme tout juste importé</span>
 </code></pre></div><p>Pour voir le résultat :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
 </code></pre></div><p>Normalement vous obtenez un site vide mais avec le thème visible.</p>
@@ -210,7 +210,7 @@ draft: true
 <p>Comme vous pouvez le voir il y a un en-tête déjà présent, il contient différentes informations, le titre, la date de la
 dernière modification et le status : draft, si <code>draft: true</code> votre page est un brouillon et ne les plus si vous modifiez
 par  <code>draft: false</code>.</p>
-<p>Vous pouvez écrire en dessous le contenu de la page en utilisant la syntaxe markdown :</p>
+<p>Vous pouvez écrire en dessous le contenu de la pages en utilisant la syntaxe markdown :</p>
 <blockquote>
 <pre><code>---
 title: &quot;Premier_article&quot;

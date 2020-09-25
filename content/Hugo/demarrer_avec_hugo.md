@@ -1,15 +1,23 @@
 ---
+author: thomas claudel
+Description: Démarrer avec Hugo
+Categories:
+    - Hugo
+    - CMS
+Tags:
+    - Hugo
+    - CMS
 title: "Démarrer avec HUGO"
 date: 2020-06-02T12:13:28+02:00
 draft: false
 ---
 
-# Démarrer avec HUGO
+![https://gohugo.io/](/img/hugo_logo.png)
 
 ### HUGO, qu'est-ce que c'est ?
 
-HUGO est un générateur de sites web statique open-source développé en Go. 
-Le but de dernier est d'être le plus rapide et flexible possible et de rendre le 
+HUGO est un générateur de site web statique open-source développé en Go. 
+Le but de ce dernier est d'être le plus rapide et flexible possible et de rendre le 
 développement de ce dernier agréable.
 
 Installer HUGO
@@ -118,7 +126,7 @@ Installer un template
 ==
 Nous allons découvrir comment ajouter un thème à votre site en HUGO, vous pouvez en trouver de partout sur internet,
 cependant je vous conseille de trouver le vôtre sur [https://themes.gohugo.io/](https://themes.gohugo.io/), c'est le 
-répertoire officiel des thèmes HUGO, c'est un gage de compatibilité et de qualité. choisissez en un et cliquez sur
+répertoire officiel des thèmes HUGO, c'est un gage de compatibilité et de qualité. Choisissez en un et cliquez sur
 download, vos allez-vous retrouver sur le dossier *github* où est présent le code source du thème, pas de panique vous
 aurez juste besoin de récupérer cet url.
 pour cet exemple nous allons utiliser : [https://github.com/budparr/gohugo-theme-ananke](https://github.com/budparr/gohugo-theme-ananke)
@@ -133,13 +141,13 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke themes/ananke
 ```
 A présent nous allons toucher à la configuration pour indiquer le thème. À la racine du projet, il y a un fichier `config.toml`
 c'est le fichier de configuration principal de notre site :  `cat ./config.toml`
-```bash
+```toml
 baseURL = "http://example.org/" # Nom de l'hote pour la mise en production
 languageCode = "en-us"
 title = "My New Hugo Site"
 ```
 Nous allons changer le contenu par : 
-```bash
+```toml
 baseURL = "http://example.org/" # Nom de l'hote pour la mise en production
 languageCode = "fr" # Passage du site en français
 title = "Mon site" # Changement du titre
@@ -174,7 +182,7 @@ Comme vous pouvez le voir il y a un en-tête déjà présent, il contient diffé
 dernière modification et le status : draft, si `draft: true` votre page est un brouillon et ne les plus si vous modifiez
 par  `draft: false`.
 
-Vous pouvez écrire en dessous le contenu de la page en utilisant la syntaxe markdown : 
+Vous pouvez écrire en dessous le contenu de la pages en utilisant la syntaxe markdown : 
 > ```
 > ---
 > title: "Premier_article"
