@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+    <title>Démarrer avec HUGO · Blog tclaudel</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="https://tclaudel.herokuapp.com/style.main.min.81409c9c4e00f0502fd825c761ff38cb6bcd11d2c599bb4821d14f17b00e7622.css" />
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://tclaudel.herokuapp.com/">Blog tclaudel</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+</div>
+</div></header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post  no-image ">
+
+            <header class="post-full-header">
+
+                
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/hugo">Hugo</a>
+                    </section>
+                
+
+                <h1 class="post-full-title">Démarrer avec HUGO</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>thomas claudel</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">thomas claudel</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-126-06">2 June 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 5 minute de lecture</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p><img src="/img/hugo_logo.png" alt="https://gohugo.io/"></p>
+<h3 id="hugo-quest-ce-que-cest-">HUGO, qu&rsquo;est-ce que c&rsquo;est ?</h3>
+<p>HUGO est un générateur de site web statique open-source développé en Go.
+Le but de ce dernier est d&rsquo;être le plus rapide et flexible possible et de rendre le
+développement de ce dernier agréable.</p>
+<h1 id="installer-hugo">Installer HUGO</h1>
+<h4 id="installer-sous-linux-">Installer sous Linux :</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+mkdir $HOME/src
+cd $HOME/src
+git clone https://github.com/gohugoio/hugo.git
+cd hugo
+go install --tags extended
+</code></pre></div><h4 id="installer-sous-macos-">Installer sous MacOs :</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install hugo
+</code></pre></div><h4 id="vérification">Vérification</h4>
+<p>Pour voir si tout c&rsquo;est bien passer, rentrez la commande :</p>
+<pre><code>hugo version
+</code></pre>
+<p>Elle devrait renvoyer quelque chose comme : <code>Hugo Static Site ######</code></p>
+<h1 id="créez-votre-premier-site-">Créez votre premier site !</h1>
+<p>Une fois HUGO installé il vous suffit de créer votre site avec la commande :</p>
+<pre><code>hugo new site nouveau_site
+cd nouveau_site
+</code></pre>
+<p>Cette commande va vous créer un nouveau dossier nommé :<br>
+<code>nouveau_site</code><br>
+il aura cette architecture :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre></div><p>Faisons le tour des dossiers principalement utilisés</p>
+<ul>
+<li><strong>archetype</strong><br>
+Ce dossier contient les modèles utilisé pour la création de vos fichiers
+le fichier <code>default.md</code> :</li>
+</ul>
+<blockquote>
+<pre><code>---
+title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+---
+</code></pre>
+</blockquote>
+<p>Ce fichier servira à déterminer le <em>Front Matter</em> (entête de formatage)<br>
+de chacun des fichiers que vous allez créer.</p>
+<ul>
+<li><strong>assets</strong><br>
+Quoi un dossier assets ? Je ne l&rsquo;ai pas de mon côté, pas de panique, c&rsquo;est un dossier
+optionnel, où vous pourrez mettre vos photos, etc.</li>
+<li><strong>config</strong><br>
+C&rsquo;est ici que vous trouverez tous les fichiers de configurations JSON, YAML ou TOML.</li>
+<li><strong>content</strong>
+C&rsquo;est le dossier principal du projet, vous écrirez tout ce qui sera publié sur ce site ici,
+vous aurez des catégories représentée par les différents dossiers ci-dessous par exemple content/articles,
+content/contact</li>
+</ul>
+<p>Pour vérifier que tout c&rsquo;est bien passé nous allons lancer notre site pour la première fois !</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
+</code></pre></div><p>Vous pouvez voir la construction de votre site :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Building sites … WARN 2020/06/02 15:29:01 found no layout file <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;HTML&#34;</span> <span style="color:#66d9ef">for</span> kind <span style="color:#e6db74">&#34;home&#34;</span>: You should create a template file which matches Hugo Layouts Lookup Rules <span style="color:#66d9ef">for</span> this combination.
+WARN 2020/06/02 15:29:01 found no layout file <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;HTML&#34;</span> <span style="color:#66d9ef">for</span> kind <span style="color:#e6db74">&#34;taxonomyTerm&#34;</span>: You should create a template file which matches Hugo Layouts Lookup Rules <span style="color:#66d9ef">for</span> this combination.
+WARN 2020/06/02 15:29:01 found no layout file <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;HTML&#34;</span> <span style="color:#66d9ef">for</span> kind <span style="color:#e6db74">&#34;taxonomyTerm&#34;</span>: You should create a template file which matches Hugo Layouts Lookup Rules <span style="color:#66d9ef">for</span> this combination.
+
+                   | EN  
+-------------------+-----
+  Pages            |  <span style="color:#ae81ff">3</span>  
+  Paginator pages  |  <span style="color:#ae81ff">0</span>  
+  Non-page files   |  <span style="color:#ae81ff">0</span>  
+  Static files     |  <span style="color:#ae81ff">0</span>  
+  Processed images |  <span style="color:#ae81ff">0</span>  
+  Aliases          |  <span style="color:#ae81ff">0</span>  
+  Sitemaps         |  <span style="color:#ae81ff">1</span>  
+  Cleaned          |  <span style="color:#ae81ff">0</span>  
+
+Built in <span style="color:#ae81ff">2</span> ms
+Watching <span style="color:#66d9ef">for</span> changes in /home/tclaudel/blog/nouveau_site/<span style="color:#f92672">{</span>archetypes,content,data,layouts,static<span style="color:#f92672">}</span>
+Watching <span style="color:#66d9ef">for</span> config changes in /home/tclaudel/blog/nouveau_site/config.toml
+Environment: <span style="color:#e6db74">&#34;development&#34;</span>
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ <span style="color:#f92672">(</span>bind address 127.0.0.1<span style="color:#f92672">)</span>
+Press Ctrl+C to stop
+</code></pre></div><p>rendez vous sur l&rsquo;addresse localhost indiquée, par défaut : <a href="http://localhost:1313/">http://localhost:1313/</a>.
+Elle est pas belle cette magnifique page blanche ? Pas de soucis à vous faire c&rsquo;est tout à fait normal, regardez plus haut
+les WARN affichés dans votre console, ils vous indiquent qu&rsquo;il ne trouve pas de template, alors ajoutons lui en un !</p>
+<h1 id="installer-un-template">Installer un template</h1>
+<p>Nous allons découvrir comment ajouter un thème à votre site en HUGO, vous pouvez en trouver de partout sur internet,
+cependant je vous conseille de trouver le vôtre sur <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>, c&rsquo;est le
+répertoire officiel des thèmes HUGO, c&rsquo;est un gage de compatibilité et de qualité. Choisissez en un et cliquez sur
+download, vos allez-vous retrouver sur le dossier <em>github</em> où est présent le code source du thème, pas de panique vous
+aurez juste besoin de récupérer cet url.
+pour cet exemple nous allons utiliser : <a href="https://github.com/budparr/gohugo-theme-ananke">https://github.com/budparr/gohugo-theme-ananke</a>
+Pour installer ce thème :</p>
+<ul>
+<li>Rendez-vous à la racine de votre projet</li>
+<li>Rentre les commandes suivantes en remplaçant l&rsquo;URL par celle de la page github :</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Initialisation de git</span>
+git init
+<span style="color:#75715e"># Importation du thème dans notre dossier thème</span>
+git submodule add https://github.com/budparr/gohugo-theme-ananke themes/ananke
+</code></pre></div><p>A présent nous allons toucher à la configuration pour indiquer le thème. À la racine du projet, il y a un fichier <code>config.toml</code>
+c&rsquo;est le fichier de configuration principal de notre site :  <code>cat ./config.toml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+</code></pre></div><p>Nous allons changer le contenu par :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span> <span style="color:#75715e"># Nom de l&#39;hote pour la mise en production</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;fr&#34;</span> <span style="color:#75715e"># Passage du site en français</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Mon site&#34;</span> <span style="color:#75715e"># Changement du titre</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;ananke&#34;</span> <span style="color:#75715e"># nom du dossier du theme tout juste importé</span>
+</code></pre></div><p>Pour voir le résultat :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
+</code></pre></div><p>Normalement vous obtenez un site vide mais avec le thème visible.</p>
+<h1 id="création-du-premier-article">Création du premier article</h1>
+<p>La commande principale pour créer du contenu est la suivante :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new articles/premier_article.md
+</code></pre></div><p>cette commande va créer une page premier_article dans la catégorie articles avec une extension <strong>.md</strong>, cette extension
+indique que ce fichier est markdown, qui permet de générer du code html à partir de code très comprehensible, je vous
+renvoie vers cet excellent tutoriel d&rsquo;openclassroom sur le sujet : <a href="https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown">cours markdown</a></p>
+<p>Une fois ceci fait allons voir le fichier crée à : <code>./content/articles/premier_article.md</code></p>
+<blockquote>
+<pre><code>---
+title: &quot;Premier_article&quot;
+date: 2020-06-02T18:12:54+02:00
+draft: true
+---
+</code></pre>
+</blockquote>
+<p>Comme vous pouvez le voir il y a un en-tête déjà présent, il contient différentes informations, le titre, la date de la
+dernière modification et le status : draft, si <code>draft: true</code> votre page est un brouillon et ne les plus si vous modifiez
+par  <code>draft: false</code>.</p>
+<p>Vous pouvez écrire en dessous le contenu de la pages en utilisant la syntaxe markdown :</p>
+<blockquote>
+<pre><code>---
+title: &quot;Premier_article&quot;
+date: 2020-06-02T18:12:54+02:00
+draft: true
+---
+
+Bienvenu sur mon premier article
+</code></pre>
+</blockquote>
+<p>Vous pouvez relancer votre serveur pour voir votre magnifique article apparaitre !</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></div><p>le -D sers à signifier que vous voulez voir tous les articles y compris ceux au status de brouillon.</p>
+<p>Vous verrez ainsi apparaitre votre premier article !<br>
+et votre application à une arborescence semblable à ceci :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+│   └── articles
+│       └── premier_article.md
+├── data
+├── layouts
+├── resources
+│   └── _gen
+│       ├── assets
+│       └── images
+├── static
+└── themes
+    └── ananke
+        ***
+</code></pre></div><p>Vous avez désormais toutes les bases pour créer votre premier site en HUGO</p>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/hugo">Hugo</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
+        </div>
+    </article>
+
+
+            
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://tclaudel.herokuapp.com/">Blog tclaudel</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://tclaudel.herokuapp.com/">Latest Posts</a>
+                    
+                    
+                    
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

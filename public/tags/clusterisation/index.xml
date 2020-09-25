@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clusterisation on Blog tclaudel</title>
+    <link>https://tclaudel.herokuapp.com/tags/clusterisation/</link>
+    <description>Recent content in Clusterisation on Blog tclaudel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 03 Jun 2020 12:34:58 +0200</lastBuildDate>
+    
+	<atom:link href="https://tclaudel.herokuapp.com/tags/clusterisation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intro Kubernetes</title>
+      <link>https://tclaudel.herokuapp.com/kubernetes/introduction/</link>
+      <pubDate>Wed, 03 Jun 2020 12:34:58 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/kubernetes/introduction/</guid>
+      <description>Kubernetes, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? Kubernetes aussi appelé k8s est un système d&amp;rsquo;orchestration de conteneurs, il permet notamment d&amp;rsquo;automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l’intérêt d&amp;rsquo;utiliser kubernetes ?
+Kubernetes permet de gagner beaucoup de temps pour la mise en place d&amp;rsquo;une application et d&amp;rsquo;avoir un contrôle le contrôle sans avoir à bidouiller à la main.
+L&amp;rsquo;objectif de cet intro est de créer votre propre machine virtuelle sur laquelle un cluster minimal avec un node master et une node slave, ne vous inquiétez pas si tout ceci vous est étranger, nous allons voir tout ça ensemble</description>
+    </item>
+    
+  </channel>
+</rss>

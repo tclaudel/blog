@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Blog tclaudel</title>
+    <link>https://tclaudel.herokuapp.com/categories/docker/</link>
+    <description>Recent content in Docker on Blog tclaudel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 25 Sep 2020 09:48:05 +0200</lastBuildDate>
+    
+	<atom:link href="https://tclaudel.herokuapp.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction à Docker</title>
+      <link>https://tclaudel.herokuapp.com/docker/introduction/</link>
+      <pubDate>Fri, 25 Sep 2020 09:48:05 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/docker/introduction/</guid>
+      <description>Découverte des conteneurs Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
+Qu&amp;rsquo;est-ce qu&amp;rsquo;une machine virtuelle ? Voici le schema d&amp;rsquo;une image virtuelle</description>
+    </item>
+    
+  </channel>
+</rss>
