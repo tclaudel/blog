@@ -13,7 +13,7 @@ date: 2020-09-25T09:48:05.000+02:00
 ---
 # Découverte des conteneurs
 
-Dans cette partie nouys allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
+Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
 
 ### Qu'est-ce qu'une machine virtuelle ?
 
