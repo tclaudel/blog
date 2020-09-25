@@ -20,4 +20,5 @@ Dans cette partie nouys allons découvrir la notion de conteneurs et la différe
 
 
 ![https://docs.docker.com/get-started/](/img/vm.png)
+![https://docs.docker.com/get-started/](/img/vm.png)
 
