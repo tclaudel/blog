@@ -4,3 +4,6 @@ theme = "hugo-casper3"
 title = "Blog tclaudel"
 [params]
 mainSections = ["Docker", "Kubernetes"]
+[module]
+    [[module.imports]]
+        path = "github.com/jonathanjanssens/hugo-casper3"
