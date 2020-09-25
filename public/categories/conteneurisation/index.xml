@@ -27,7 +27,7 @@ Qu&amp;rsquo;est-ce qu&amp;rsquo;une machine virtuelle ? Voici le schema d&amp;r
       <pubDate>Wed, 03 Jun 2020 12:34:58 +0200</pubDate>
       
       <guid>https://tclaudel.herokuapp.com/kubernetes/introduction/</guid>
-      <description>Pouet Kubernetes, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? Kubernetes aussi appelé k8s est un système d&amp;rsquo;orchestration de conteneurs, il permet notamment d&amp;rsquo;automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l’intérêt d&amp;rsquo;utiliser kubernetes ?
+      <description>Kubernetes, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? Kubernetes aussi appelé k8s est un système d&amp;rsquo;orchestration de conteneurs, il permet notamment d&amp;rsquo;automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l’intérêt d&amp;rsquo;utiliser kubernetes ?
 Kubernetes permet de gagner beaucoup de temps pour la mise en place d&amp;rsquo;une application et d&amp;rsquo;avoir un contrôle le contrôle sans avoir à bidouiller à la main.
 L&amp;rsquo;objectif de cet intro est de créer votre propre machine virtuelle sur laquelle un cluster minimal avec un node master et une node slave, ne vous inquiétez pas si tout ceci vous est étranger, nous allons voir tout ça ensemble</description>
     </item>
