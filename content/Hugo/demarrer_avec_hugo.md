@@ -1,10 +1,10 @@
 ---
 author: thomas claudel
 Description: Démarrer avec Hugo
-Categories:
+categories:
 - Hugo
 - CMS
-Tags:
+tags:
 - Hugo
 - CMS
 title: Démarrer avec HUGO

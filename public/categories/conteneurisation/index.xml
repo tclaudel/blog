@@ -18,7 +18,8 @@
       
       <guid>https://tclaudel.herokuapp.com/docker/introduction/</guid>
       <description>Découverte des conteneurs Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
-Qu&amp;rsquo;est-ce qu&amp;rsquo;une machine virtuelle Voici le schema d&amp;rsquo;une image virtuelle</description>
+La différence entre machine virtuelle et conteneur source : https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662
+Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles et un conteneurs, il y a des différences fondamentales qui n&amp;rsquo;apparaissent pas forcement au premier regard</description>
     </item>
     
     <item>
