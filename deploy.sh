@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-git pull origin master
 
+git pull origin master
 rm -Rf ./public
 hugo
 git add .
