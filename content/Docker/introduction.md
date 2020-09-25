@@ -2,16 +2,15 @@
 author: thomas claudel
 description: Introduction à Docker
 categories:
-    - Docker
-    - Conteneurisation
+- Docker
+- Conteneurisation
 tags:
-    - Docker
-    - Conteneurisation
-title: "Introduction à Docker"
-date: 2020-09-25T09:48:05+02:00
-draft: true
----
+- Docker
+- Conteneurisation
+title: Introduction à Docker
+date: 2020-09-25T09:48:05.000+02:00
 
+---
 # Découverte des conteneurs
 
 Dans cette partie nouys allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
@@ -20,4 +19,3 @@ Dans cette partie nouys allons découvrir la notion de conteneurs et la différe
 
 
 ![https://docs.docker.com/get-started/](/img/vm.png)
-
