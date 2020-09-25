@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: config.toml
-  label: config
 - type: directory
   path: content/Kubernetes
   label: Kubernetes
@@ -27,6 +24,9 @@ sections:
   label: Pages
   create: all
   match: "**/**/*"
+- type: document
+  path: config.toml
+  label: config
 upload_dir: static
 public_path: "/uploads"
 front_matter_path: ''
