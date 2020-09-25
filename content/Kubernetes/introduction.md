@@ -11,7 +11,7 @@ tags:
 - Conteneurisation
 title: Intro Kubernetes
 date: 2020-06-03T12:34:58.000+02:00
-
+draft: False
 ---
 ![](/img/k8s_logo.png)
 

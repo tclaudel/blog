@@ -9,7 +9,7 @@ Tags:
 - CMS
 title: Démarrer avec HUGO
 date: 2020-06-02T12:13:28.000+02:00
-
+draft: False
 ---
 ![https://gohugo.io/](/img/hugo_logo.png)
 
