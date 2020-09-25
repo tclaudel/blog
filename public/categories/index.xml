@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Blog tclaudel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Wed, 03 Jun 2020 12:34:58 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 09:48:05 +0200</lastBuildDate>
     
 	<atom:link href="https://tclaudel.herokuapp.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Conteneurisation</title>
+      <link>https://tclaudel.herokuapp.com/categories/conteneurisation/</link>
+      <pubDate>Fri, 25 Sep 2020 09:48:05 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/categories/conteneurisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://tclaudel.herokuapp.com/categories/docker/</link>
+      <pubDate>Fri, 25 Sep 2020 09:48:05 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/categories/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Clusterisation</title>
@@ -17,15 +35,6 @@
       <pubDate>Wed, 03 Jun 2020 12:34:58 +0200</pubDate>
       
       <guid>https://tclaudel.herokuapp.com/categories/clusterisation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Conteneurisation</title>
-      <link>https://tclaudel.herokuapp.com/categories/conteneurisation/</link>
-      <pubDate>Wed, 03 Jun 2020 12:34:58 +0200</pubDate>
-      
-      <guid>https://tclaudel.herokuapp.com/categories/conteneurisation/</guid>
       <description></description>
     </item>
     

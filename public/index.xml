@@ -6,10 +6,20 @@
     <description>Recent content on Blog tclaudel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Wed, 03 Jun 2020 12:34:58 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 09:48:05 +0200</lastBuildDate>
     
 	<atom:link href="https://tclaudel.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction à Docker</title>
+      <link>https://tclaudel.herokuapp.com/docker/introduction/</link>
+      <pubDate>Fri, 25 Sep 2020 09:48:05 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/docker/introduction/</guid>
+      <description>Découverte des conteneurs Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
+Qu&amp;rsquo;est-ce qu&amp;rsquo;une machine virtuelle ? Voici le schema d&amp;rsquo;une image virtuelle</description>
+    </item>
     
     <item>
       <title>Intro Kubernetes</title>
@@ -17,7 +27,7 @@
       <pubDate>Wed, 03 Jun 2020 12:34:58 +0200</pubDate>
       
       <guid>https://tclaudel.herokuapp.com/kubernetes/introduction/</guid>
-      <description>Kubernetes, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? Kubernetes aussi appelé k8s est un système d&amp;rsquo;orchestration de conteneurs, il permet notamment d&amp;rsquo;automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l&amp;rsquo;intêret d&amp;rsquo;utiliser kubernetes ?
+      <description>Pouet Kubernetes, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? Kubernetes aussi appelé k8s est un système d&amp;rsquo;orchestration de conteneurs, il permet notamment d&amp;rsquo;automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l&amp;rsquo;intêret d&amp;rsquo;utiliser kubernetes ?
 Kubernetes permet de gagner beaucoup de temps pour la mise en place d&amp;rsquo;une application et d&amp;rsquo;avoir un contrôle le contrôle sans avoir à bidouiller à la main.
 L&amp;rsquo;objectif de cet intro est de créer votre propre machine virtuelle sur laquelle un cluster minimal avec un node master et une node slave, ne vous inquiétez pas si tout ceci vous est étranger, nous allons voir tout ça ensemble</description>
     </item>

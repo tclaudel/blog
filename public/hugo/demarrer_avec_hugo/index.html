@@ -111,12 +111,14 @@ go install --tags extended
 </code></pre></div><h4 id="vérification">Vérification</h4>
 <p>Pour voir si tout c&rsquo;est bien passer, rentrez la commande :</p>
 <pre><code>hugo version
-</code></pre><p>Elle devrait renvoyer quelque chose comme : <code>Hugo Static Site ######</code></p>
+</code></pre>
+<p>Elle devrait renvoyer quelque chose comme : <code>Hugo Static Site ######</code></p>
 <h1 id="créez-votre-premier-site-">Créez votre premier site !</h1>
 <p>Une fois HUGO installé il vous suffit de créer votre site avec la commande :</p>
 <pre><code>hugo new site nouveau_site
 cd nouveau_site
-</code></pre><p>Cette commande va vous créer un nouveau dossier nommé :<br>
+</code></pre>
+<p>Cette commande va vous créer un nouveau dossier nommé :<br>
 <code>nouveau_site</code><br>
 il aura cette architecture :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
@@ -140,7 +142,8 @@ title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
 date: {{ .Date }}
 draft: true
 ---
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <p>Ce fichier servira à déterminer le <em>Front Matter</em> (entête de formatage)<br>
 de chacun des fichiers que vous allez créer.</p>
 <ul>
@@ -225,7 +228,8 @@ title: &quot;Premier_article&quot;
 date: 2020-06-02T18:12:54+02:00
 draft: true
 ---
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <p>Comme vous pouvez le voir il y a un en-tête déjà présent, il contient différentes informations, le titre, la date de la
 dernière modification et le status : draft, si <code>draft: true</code> votre page est un brouillon et ne les plus si vous modifiez
 par  <code>draft: false</code>.</p>
@@ -238,7 +242,8 @@ draft: true
 ---
 
 Bienvenu sur mon premier article
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <p>Vous pouvez relancer votre serveur pour voir votre magnifique article apparaitre !</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
 </code></pre></div><p>le -D sers à signifier que vous voulez voir tous les articles y compris ceux au status de brouillon.</p>
