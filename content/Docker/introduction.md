@@ -8,7 +8,7 @@ tags:
 - Docker
 - Conteneurisation
 title: Introduction à Docker
-date: 2020-09-25T09:48:05+02:00
+date: 2020-09-25T09:48:05.000+02:00
 
 ---
 # Découverte des conteneurs
@@ -21,4 +21,6 @@ Dans cette partie nous allons découvrir la notion de conteneurs et la différen
 
 source : [https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662](https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662 "https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662")
 
-Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles et un conteneurs, il y a des différences fondamentales qui n'apparaissent pas forcement au premier regard 
+Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n'apparaissent pas forcement au premier regard.
+
+Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte, 
