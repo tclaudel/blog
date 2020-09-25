@@ -15,8 +15,6 @@ date: 2020-06-03T12:34:58.000+02:00
 ---
 ![](/img/k8s_logo.png)
 
-# Pouet
-
 # Kubernetes, qu'est-ce que c'est ?
 
 Kubernetes aussi appelé k8s est un système d'orchestration de conteneurs, il permet notamment d'automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l’intérêt d'utiliser kubernetes ?  
