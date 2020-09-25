@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rm -Rf ./public
+#rm -Rf ./public
 hugo
 git add .
 git status
