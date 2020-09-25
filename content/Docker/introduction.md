@@ -17,5 +17,6 @@ Dans cette partie nouys allons découvrir la notion de conteneurs et la différe
 
 ### Qu'est-ce qu'une machine virtuelle ?
 
-
 ![https://docs.docker.com/get-started/](/img/vm.png)
+
+Salut a tous
