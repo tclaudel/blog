@@ -9,4 +9,4 @@ title = "Blog tclaudel"
     [[module.imports]]
         disable = false
         ignoreConfig = false
-        path = "github.com/jonathanjanssens/hugo-casper3"
+        path = "/hugo-casper3"
