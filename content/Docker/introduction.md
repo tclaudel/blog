@@ -17,6 +17,6 @@ Dans cette partie nous allons découvrir la notion de conteneurs et la différen
 
 ### Qu'est-ce qu'une machine virtuelle
 
-![](/uploads/img/vm.png)
+!\[\](/img/vm.png)
 
 Voici le schema d'une image virtuelle
