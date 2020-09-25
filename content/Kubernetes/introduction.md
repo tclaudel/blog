@@ -11,7 +11,7 @@ tags:
 - Conteneurisation
 title: Intro Kubernetes
 date: 2020-06-03T12:34:58.000+02:00
-draft: False
+
 ---
 ![](/img/k8s_logo.png)
 
@@ -19,8 +19,7 @@ draft: False
 
 # Kubernetes, qu'est-ce que c'est ?
 
-Kubernetes aussi appelé k8s est un système d'orchestration de conteneurs, il permet notamment d'automatiser le
-déploiement de conteneurs et de gérer facilement votre cluster. Quel est l'intêret d'utiliser kubernetes ?  
+Kubernetes aussi appelé k8s est un système d'orchestration de conteneurs, il permet notamment d'automatiser le déploiement de conteneurs et de gérer facilement votre cluster. Quel est l’intérêt d'utiliser kubernetes ?  
 Kubernetes permet de gagner beaucoup de temps pour la mise en place d'une application et d'avoir un contrôle le
 contrôle sans avoir à bidouiller à la main.
 
