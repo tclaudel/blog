@@ -27,5 +27,5 @@ et une node slave, ne vous inquiétez pas si tout ceci vous est étranger, nous 
 ## Vagrant
 
 Vagrant ? Je croyais que c'était un tuto kubernetes ?! Pas de panique, ce sera l'outil que l'on va utiliser pour créer
-notre machine virtuelle, une alternative est d'utiliser minikube fourni par kubernetes, cependant, c'est littéralement
+notre machine virtuelle, une alternative est d'utiliser Minikube fourni par kubernetes, cependant, c'est littéralement
 la version démo de kubernetes, c'est pour ceci que nous allons créer une infrastructure plus proche de la réalité :
