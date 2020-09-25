@@ -19,8 +19,6 @@ HUGO est un générateur de site web statique open-source développé en Go.
 Le but de ce dernier est d'être le plus rapide et flexible possible et de rendre le
 développement de ce dernier agréable.
 
-# Bite
-
 # Installer HUGO
 
 #### Installer sous Linux :
