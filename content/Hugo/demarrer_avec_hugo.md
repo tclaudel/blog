@@ -9,11 +9,11 @@ Tags:
 - CMS
 title: Démarrer avec HUGO
 date: 2020-06-02T12:13:28.000+02:00
-draft: False
+
 ---
 ![https://gohugo.io/](/img/hugo_logo.png)
 
-### HUGO, qu'est-ce que c'est ?
+### ![](/img/k8s_logo.png)HUGO, qu'est-ce que c'est ?
 
 HUGO est un générateur de site web statique open-source développé en Go.
 Le but de ce dernier est d'être le plus rapide et flexible possible et de rendre le
