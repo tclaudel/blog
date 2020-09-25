@@ -1,8 +1,7 @@
 baseURL = "https://tclaudel.herokuapp.com/"
 languageCode = "fr"
-theme = "hugo-theme-novela"
+theme = "hugo-casper3"
 title = "Blog tclaudel"
 [params]
     mainSections = ["Docker", "Kubernetes"]
-
 

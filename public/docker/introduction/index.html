@@ -1,146 +1,120 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/images/favicon.svg">
+    
+    <link rel="stylesheet" href="/scss/global.min.fb4dd79813ef5075eb6e0a596ca103e09f51efc11a614d013d4d9049d60904b1.css">
+    
+    <link rel="stylesheet" href="/css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    
+
+ 
+
+
+
+
+
+
+	
+
+
+
+
+<title>Introduction à Docker | Blog tclaudel</title>
+<meta name="description" content="Introduction à Docker">
+<meta property="og:title" content="Introduction à Docker | Blog tclaudel">
+<meta property="og:site_name" content="Blog tclaudel">
+<meta property="og:description" content="Introduction à Docker">
+<meta property="og:url" content="https://tclaudel.herokuapp.com/docker/introduction/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content='https://tclaudel.herokuapp.com/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Introduction à Docker | Blog tclaudel">
+
+	<link rel="canonical" href="https://tclaudel.herokuapp.com/docker/introduction/">
+
+
+	<meta name="twitter:description" content="Introduction à Docker">
+<meta name="twitter:image" content="https://tclaudel.herokuapp.com/uploads/default.jpg">
+<meta property="article:published_time" content="2020-09-25T09:48:05&#43;02:00">
+	<meta property="article:updated_time" content="2020-09-25T09:48:05&#43;02:00">
+
+
+
+    </head>
+
+
+<body class="line-numbers">
 
     
-    
-    <title>Introduction à Docker · Blog tclaudel</title>
+    <script src="/js/initColors.js"></script>
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div class="layout-styled">
 
-    
-    <link rel="stylesheet" href="https://tclaudel.herokuapp.com/style.main.min.81409c9c4e00f0502fd825c761ff38cb6bcd11d2c599bb4821d14f17b00e7622.css" />
-
+        <!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Introduction à Docker</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Introduction à Docker">
+    <meta name="keywords" content="Docker,Conteneurisation,">
+    <meta name="author" content="thomas claudel">
+    <meta name="generator" content="Hugo 0.73.0-DEV" />
+    <link rel="stylesheet" href="https://tclaudel.herokuapp.com/css/style.css">
+    <link href="https://tclaudel.herokuapp.com/index.xml" rel="alternate" type="application/rss+xml" title="Blog tclaudel">
+    <link rel="icon" type="image/x-icon" href="https://tclaudel.herokuapp.com/favicon.ico">
 </head>
-<body class=" post-template ">
 
-    <div class="site-wrapper">
-
-<header class="site-header"><div class="outer site-nav-main">
-    <div class="inner"><nav class="site-nav">
-    <div class="site-nav-left">
         
-            <a class="site-nav-logo" href="https://tclaudel.herokuapp.com/">Blog tclaudel</a>
-        
-        
-        <div class="site-nav-content">
-            <ul class="nav" role="menu">
-                
-            </ul>
-        </div>
-        
-    </div>
-</nav>
 
-</div>
-</div></header>
+<section class="section narrow">
 
-<main id="site-main" class="site-main outer">
-    <div class="inner">
+    <section id="articleHero" class="section narrow">
+  <div class="article-hero">
+      <header class="article-header">
+          <h1 class="article-hero-heading">Introduction à Docker</h1>
+      </header>
+      
+  </div>
+</section>
 
-        <article class="post-full post  no-image ">
-
-            <header class="post-full-header">
-
-                
-                    
-                    <section class="post-full-tags">
-                        <a href="/tags/docker">Docker</a>
-                    </section>
-                
-
-                <h1 class="post-full-title">Introduction à Docker</h1>
-
-                
-
-                <div class="post-full-byline">
-                    <section class="post-full-byline-content">
-
-                        <ul class="author-list">
-    <li class="author-list-item">
-        <div class="author-card">
-            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
-            <div class="author-info">
-                <div class="author-info">
-                    <h2>thomas claudel</h2>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
-    </li>
-</ul>
-
-                        <section class="post-full-byline-meta">
-                            
-                                <h4 class="author-name">thomas claudel</h4>
-                            
-                            <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="2020-99-09">25 September 2020</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> 1 minute de lecture</span>
-                            </div>
-                        </section>
-
-                    </section>
-
-
-                </div>
-            </header>
-
-            
-
-            <section class="post-full-content">
-                <div class="post-content">
-                    <h1 id="découverte-des-conteneurs">Découverte des conteneurs</h1>
+    <article  id="articleContent" class="post-content">
+        <h1 id="découverte-des-conteneurs">Découverte des conteneurs</h1>
 <p>Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.</p>
 <h3 id="quest-ce-quune-machine-virtuelle-">Qu&rsquo;est-ce qu&rsquo;une machine virtuelle ?</h3>
 <p><img src="/uploads/img/vm.png" alt="" title="Schema machine virtuelle"></p>
 <p>Voici le schema d&rsquo;une image virtuelle</p>
 
-                </div>
-            </section>
-
-        </article>
-
-    </div>
-</main>
-<aside class="read-next outer">
-    <div class="inner">
-        <div class="read-next-feed">
-    
-    <article class="read-next-card">
-        <header class="read-next-card-header">
-            <h3><span>More in</span> <a href="/tags/docker">Docker</a></h3>
-        </header>
-        <div class="read-next-card-content">
-            <ul>
-                
-            </ul>
-        </div>
     </article>
+    
+</section>
 
 
-            
+        
+        <div class="footer-gradient"></div>
+    <div class="section narrow">
+      <div class="footer-hr"></div>
+      <div class="footer-container">
+        <div class="footer-text">
+          © 2020 Blog tclaudel
         </div>
+        <div class="social-icon-outer">
+    <div class="social-icon-container">
+        
     </div>
-</aside>
+</div>
+    </div>
+</div>
 
-
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://tclaudel.herokuapp.com/">Blog tclaudel</a> &copy; 2020</section>
-                <nav class="site-footer-nav">
-                    <a href="https://tclaudel.herokuapp.com/">Latest Posts</a>
-                    
-                    
-                    
-                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
-                </nav>
-            </div>
-        </footer>
     </div>
 
+    
+    <script src="/js/prism.js"></script>
 </body>
+
 </html>
