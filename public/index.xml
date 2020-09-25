@@ -38,7 +38,7 @@ L&amp;rsquo;objectif de cet intro est de créer votre propre machine virtuelle s
       <pubDate>Tue, 02 Jun 2020 12:13:28 +0200</pubDate>
       
       <guid>https://tclaudel.herokuapp.com/hugo/demarrer_avec_hugo/</guid>
-      <description>HUGO, qu&amp;rsquo;est-ce que c&amp;rsquo;est ? HUGO est un générateur de site web statique open-source développé en Go. Le but de ce dernier est d&amp;rsquo;être le plus rapide et flexible possible et de rendre le développement de ce dernier agréable.
+      <description>HUGO est un générateur de site web statique open-source développé en Go. Le but de ce dernier est d&amp;rsquo;être le plus rapide et flexible possible et de rendre le développement de ce dernier agréable.
 Installer HUGO Installer sous Linux : wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash mkdir $HOME/src cd $HOME/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended Installer sous MacOs : brew install hugo Vérification Pour voir si tout c&amp;rsquo;est bien passer, rentrez la commande :</description>
     </item>
     
