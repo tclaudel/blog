@@ -8,15 +8,17 @@ tags:
 - Docker
 - Conteneurisation
 title: Introduction à Docker
-date: 2020-09-25T09:48:05.000+02:00
+date: 2020-09-25T09:48:05+02:00
 
 ---
 # Découverte des conteneurs
 
 Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
 
-### Qu'est-ce qu'une machine virtuelle
+### La différence entre machine virtuelle et conteneur
 
-![](/img/vm.png)
+![](/15577645779374_vm-vs-conteneur.png)
 
-Voici le schema d'une image virtuelle
+source : [https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662](https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662 "https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662")
+
+Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles et un conteneurs, il y a des différences fondamentales qui n'apparaissent pas forcement au premier regard 
