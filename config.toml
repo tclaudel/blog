@@ -3,4 +3,4 @@ languageCode = "fr"
 theme = "hugo-casper3"
 title = "Blog tclaudel"
 [params]
-mainSections = ["Docker", "Hugo", "Kubernetes"]
+mainSections = ["Docker", "Kubernetes"]

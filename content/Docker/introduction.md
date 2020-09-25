@@ -15,8 +15,8 @@ draft: False
 
 Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
 
-### Qu'est-ce qu'une machine virtuelle ?
+### Qu'est-ce qu'une machine virtuelle ? 
 
-![https://docs.docker.com/get-started/](/img/vm.png)
+![](/uploads/img/vm.png)
 
-Salut a tous
+Voici le schema d'une image virtuelle
