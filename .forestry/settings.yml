@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: Docker
+  path: content/Docker
   label: Docker
   create: all
   match: "**/*"
