@@ -7,9 +7,7 @@ date: 2020-06-02T12:13:28.000+02:00
 
 ### HUGO, qu'est-ce que c'est ?
 
-HUGO est un générateur de sites web statique open-source développé en Go.
-Le but de dernier est d'être le plus rapide et flexible possible et de rendre le
-développement de ce dernier agréable.
+HUGO est un générateur de sites web statique open-source développé en Go. Le but de dernier est d'être le plus rapide et flexible possible et de rendre le développement de ce dernier agréable.
 
 # Installer HUGO
 
