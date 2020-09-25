@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/Kubernetes
+  label: Kubernetes
+  create: all
+  match: "**/*"
+- type: directory
   path: content/Hugo
   label: Hugo
   create: all
@@ -18,7 +23,7 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*/*/*"
+  match: "**/**/*"
 upload_dir: static
 public_path: "/uploads"
 front_matter_path: ''
