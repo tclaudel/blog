@@ -6,10 +6,21 @@
     <description>Recent content on Blog tclaudel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 25 Sep 2020 09:48:05 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 10:44:45 +0200</lastBuildDate>
     
 	<atom:link href="https://tclaudel.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitOps Introduction</title>
+      <link>https://tclaudel.herokuapp.com/gitops/gitops_introduction/</link>
+      <pubDate>Fri, 23 Oct 2020 10:44:45 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/gitops/gitops_introduction/</guid>
+      <description>Introduction à GitOps Qu&amp;rsquo;est-ce que GitOps ? GitOps est un concept introduit en 2017 par &amp;ldquo;Weave&amp;rdquo;. Le principe de GitOps rejoint celui d&amp;rsquo;infrastructure as code, avec des contraintes qui définissent des bonnes pratiques.
+Ces deux principes reposent en grande partie sur la formulation déclarative de l&amp;rsquo;infrastructure. Avec l&amp;rsquo;usage d&amp;rsquo;outils tels que Ansible, Chef/Puppet, Terraform, Salt, et bien sûr Kubernetes.
+De ce fait, les opération manuelles via ssh ou kubectl sont proscrites.</description>
+    </item>
     
     <item>
       <title>Introduction à Docker</title>
@@ -19,8 +30,8 @@
       <guid>https://tclaudel.herokuapp.com/docker/introduction/</guid>
       <description>Découverte des conteneurs Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
 La différence entre machine virtuelle et conteneur source : https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662
-Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n&amp;rsquo;apparaissent pas forcement au premier regard.
-Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte,</description>
+Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n&amp;rsquo;apparaissent pas forcément au premier regard.
+Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte, ceci possède des avantages et des inconvénients.</description>
     </item>
     
     <item>

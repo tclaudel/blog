@@ -19,8 +19,8 @@
       <guid>https://tclaudel.herokuapp.com/docker/introduction/</guid>
       <description>Découverte des conteneurs Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.
 La différence entre machine virtuelle et conteneur source : https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662
-Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n&amp;rsquo;apparaissent pas forcement au premier regard.
-Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte,</description>
+Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n&amp;rsquo;apparaissent pas forcément au premier regard.
+Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte, ceci possède des avantages et des inconvénients.</description>
     </item>
     
     <item>

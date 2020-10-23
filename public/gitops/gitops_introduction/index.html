@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+    <title>GitOps Introduction · Blog tclaudel</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="https://tclaudel.herokuapp.com/style.main.min.81409c9c4e00f0502fd825c761ff38cb6bcd11d2c599bb4821d14f17b00e7622.css" />
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://tclaudel.herokuapp.com/">Blog tclaudel</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+</div>
+</div></header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post  no-image ">
+
+            <header class="post-full-header">
+
+                
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/gitops">gitops</a>
+                    </section>
+                
+
+                <h1 class="post-full-title">GitOps Introduction</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>thomas claudel</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">thomas claudel</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-1010-10">23 October 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 3 minute de lecture</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <h1 id="introduction-à-gitops">Introduction à GitOps</h1>
+<h2 id="quest-ce-que-gitops-">Qu&rsquo;est-ce que GitOps ?</h2>
+<p>GitOps est un concept introduit en 2017 par &ldquo;Weave&rdquo;.
+Le principe de GitOps rejoint celui d&rsquo;infrastructure as code, avec des contraintes qui définissent des bonnes pratiques.<br>
+Ces deux principes reposent en grande partie sur la formulation déclarative de l&rsquo;infrastructure. Avec l&rsquo;usage d&rsquo;outils
+tels que Ansible, Chef/Puppet, Terraform, Salt, et bien sûr Kubernetes.</p>
+<p>De ce fait, les opération manuelles via ssh ou kubectl sont proscrites. Tout changement doit être écrit de manière
+déclarative via un outils de provisionnement ou de déploiement.</p>
+<h2 id="les-spécificitées-de-gitops">Les spécificitées de GitOps</h2>
+<p>GitOps se base sur Git, c&rsquo;est-à-dire que notre dépôt git est notre source de vérité absolue, cela nous incite à utiliser
+git pour effectuer nos déploiements habituels via du &ldquo;Continuous Deployment&rdquo;</p>
+<p>La notion de convergence est également un point important du GitOps. Étant donné que notre dépôt git est notre source,
+il faut faire en sorte que nos déploiements soit le plus proche de l&rsquo;état décrit dans git. Cela passe par la supervision
+active de notre infrastructure et du report des divergences constatées.</p>
+<h2 id="les-bonnes-pratiques-de-git">Les bonnes pratiques de git</h2>
+<p>Tous nos environnements sont écrits de manière déclarative. Cela apporte les avantages d&rsquo;un VCS(Version Control System)
+classique, notamment la possibilité de rollback et d&rsquo;avoir un historique clair de nos modifications.</p>
+<p>On peut ajouter à cela le <a href="https://12factor.net/dev-prod-parity">1er point des 12 Factors</a> interdisant de démultiplier
+les branches ou les dépôts décrivant plusieurs environnements d&rsquo;un même déploiement. Par exemple, il est inconcevable de
+maintenir une branche &ldquo;pré-prod&rdquo; avec les spécificités de votre environnement de préproduction à l&rsquo;intérieur.</p>
+<p>Les bonnes pratiques conseillent plûtot de décrire tous les environnements dans votre branche principale. Ainsi, vous
+devrez modifier tous vos environnements en même temps et vous n&rsquo;aurez plus à maintenir les spécificités de votre
+environnement à part.</p>
+<p>Attention cela n&rsquo;interdit absolument pas de créer d&rsquo;autres branches pour vos nouvelles fonctionnalités. Vous pouvez bien
+entendu applikers des workflows tels que le Git Flow, le Github Flow, le GitLab flow ou bien tout autre dérivé collant
+plus à votre utilisation et votre équipe.</p>
+<p>Sur Kubernetes, il est possible d&rsquo;utiliser l&rsquo;outil &ldquo;Kustomize&rdquo; pour faire ça. Il est natif à &ldquo;kubectl&rdquo; et propose un
+système d&rsquo;overlay. Pour faire court : on décrit notre base et on vient appliquer des patchs. Souvent, on décrit un
+overlay décrivant différents patchs pour passer de notre base commune aux spécificités de notre environnement.</p>
+<h2 id="les-différentes-stratégies-de-développement-continu">Les différentes stratégies de Développement continu</h2>
+<p>Pour l&rsquo;étape de &ldquo;Contious Developement&rdquo;, il faut distinguer deux stratégies différentes:</p>
+<ul>
+<li>La stratégie <em><strong>push</strong></em>, plus traditionnelle, consiste à se servir de sa forge pour &ldquo;push&rdquo; les modifications qu&rsquo;on
+vient d&rsquo;effectuer dans git.</li>
+<li>La stratégie <em><strong>pull</strong></em> consiste à laisser l&rsquo;infrastructure s&rsquo;auto-gérer et à tout seul &ldquo;pull&rdquo; le dépot git et se
+l&rsquo;auto-appliquer. Cela permet notamment de s&rsquo;abstraire de la forge pour la partie CD ce qui implique moins de vendors
+<a href="https://fr.wikipedia.org/wiki/Enfermement_propri%C3%A9taire">lock-in</a>. Certaines solutions imposent néanmoins la
+plateforme sur laquelle notre dépot git doit être hébergé, comme GitHub ou GitLab par exemple.</li>
+</ul>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/gitops">gitops</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
+        </div>
+    </article>
+
+
+            
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://tclaudel.herokuapp.com/">Blog tclaudel</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://tclaudel.herokuapp.com/">Latest Posts</a>
+                    
+                    
+                    
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

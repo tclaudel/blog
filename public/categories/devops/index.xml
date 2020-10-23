@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Blog tclaudel</title>
+    <link>https://tclaudel.herokuapp.com/categories/devops/</link>
+    <description>Recent content in devops on Blog tclaudel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 23 Oct 2020 10:44:45 +0200</lastBuildDate>
+    
+	<atom:link href="https://tclaudel.herokuapp.com/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitOps Introduction</title>
+      <link>https://tclaudel.herokuapp.com/gitops/gitops_introduction/</link>
+      <pubDate>Fri, 23 Oct 2020 10:44:45 +0200</pubDate>
+      
+      <guid>https://tclaudel.herokuapp.com/gitops/gitops_introduction/</guid>
+      <description>Introduction à GitOps Qu&amp;rsquo;est-ce que GitOps ? GitOps est un concept introduit en 2017 par &amp;ldquo;Weave&amp;rdquo;. Le principe de GitOps rejoint celui d&amp;rsquo;infrastructure as code, avec des contraintes qui définissent des bonnes pratiques.
+Ces deux principes reposent en grande partie sur la formulation déclarative de l&amp;rsquo;infrastructure. Avec l&amp;rsquo;usage d&amp;rsquo;outils tels que Ansible, Chef/Puppet, Terraform, Salt, et bien sûr Kubernetes.
+De ce fait, les opération manuelles via ssh ou kubectl sont proscrites.</description>
+    </item>
+    
+  </channel>
+</rss>

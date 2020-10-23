@@ -79,7 +79,7 @@
                             
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date" datetime="2020-99-09">25 September 2020</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> 1 minute de lecture</span>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 3 minute de lecture</span>
                             </div>
                         </section>
 
@@ -97,9 +97,53 @@
 <p>Dans cette partie nous allons découvrir la notion de conteneurs et la différence avec les machines virtuelles.</p>
 <h3 id="la-différence-entre-machine-virtuelle-et-conteneur">La différence entre machine virtuelle et conteneur</h3>
 <p><img src="/15577645779374_vm-vs-conteneur.png" alt=""></p>
-<p>source : <a href="https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662" title="https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662">https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662</a></p>
-<p>Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des différences fondamentales qui n&rsquo;apparaissent pas forcement au premier regard.</p>
-<p>Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et réserve des ressources (CPU/RAM) sur le système hôte,</p>
+<p><em>source : <a href="https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662" title="https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662"><em>https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211306-decouvrez-les-conteneurs#/id/r-6231662</em></a></em></p>
+<p>Sur le schéma si dessus vous pouvez voir la différence entre les machines virtuelles (VM) et un conteneurs, il y a des
+<strong>différences fondamentales</strong> qui n&rsquo;apparaissent pas forcément au premier regard.</p>
+<p>Avec une VM, on recrée un système complet dans le système de son hôte, la machine met donc du temps pour démarrer et
+réserve des ressources (CPU/RAM) sur le système hôte, ceci possède des avantages et des inconvénients. Les avantages sont que <strong>la VM est totalement isolée de son hôte</strong> et d&rsquo;autres part les ressources réservées lui sont garanties. Cependant d&rsquo;un autre côté les VM mettent du temps pour démarrer et sont beaucoup plus lourdes car des ressources de la machines lui sont réservées même si elles sont inutilisées</p>
+<p>Au contraire les conteneurs sont des processus isolés du système et très léger. De plus les conteneurs <strong>partagent le même système kernel</strong>, il n&rsquo;y a donc pas besoin d&rsquo;installer un système d&rsquo;exploitation complet. Les conteneurs ne réservent que les ressources nécessaires ainsi si nous allouons 10 Go de RAM au conteneur mais qu&rsquo;il n&rsquo;en a besoin que de 4, le reste sera toujours disponible pour d&rsquo;autres tâches. Au niveau du démarrage, les ressources sont isolées et non virtualisée ce qui permet de démarrer beaucoup plus rapidement !</p>
+<h4 id="pourquoi-utiliser-des-conteneurs-">Pourquoi utiliser des conteneurs ?</h4>
+<p>Les conteneurs sont de plus en plus utilisés car ils permettent de réduire les coûts, être plus scalable tout en raccourcissant le cycle de développement</p>
+<p>Cependant bien qu&rsquo;étant des technologies proches l&rsquo;une de l&rsquo;autre, celles-ci restent des outils complémentaires à utiliser à bon escient</p>
+<h1 id="installer-docker">Installer Docker</h1>
+<h5 id="linux">Linux</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-cache search socker.io
+$ sudo apt-get install docker.io
+</code></pre></div><h5 id="macos">MacOs</h5>
+<p><a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></p>
+<h5 id="windows">Windows</h5>
+<p><a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a></p>
+<p>Pour vérifier si l&rsquo;instalation c&rsquo;est bien passée</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker
+</code></pre></div><p>Le retour de cette fonction devrait être la liste des commandes possibles avec docker</p>
+<p>le commande de base pour lister les conteneurs docker presents sur la machine :</p>
+<pre><code>$ docker ps
+</code></pre><p>Pour débuter rendez vous sur <a href="https://hub.docker.com/">docker hub</a>, c&rsquo;est le site de partage d&rsquo;image docker.
+Pour bien comprendre le fonctionnement, nous allons créer des images à partir de l&rsquo;image la plus légère qui soit : alpine linux
+Pour télécharger cette image :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker pull alpine:latest <span style="color:#75715e"># :latest faisant appel à la dernière version</span>
+</code></pre></div><p>pour lancer votre premier conteneur avec l&rsquo;image alpine exécutez :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker run alpine:latest
+</code></pre></div><p>Et là que se passe t&rsquo;il ?
+rien en apparence même un <code>docker ps</code> ne nous indique rien, cependant un <code>docker ps -a</code> nous indique ceci :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker ps -a <span style="color:#75715e"># -a pour all</span>
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS
+df83aceb384a        alpine:latest       <span style="color:#e6db74">&#34;/bin/sh&#34;</span>                About a minute ago   Exited <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span> About a minute ago
+</code></pre></div><p>Le retour de cette commande nous indique qu&rsquo;il y a une minute, le conteneur a été lancé, a éxécuté &ldquo;/bin/sh&rdquo;, puis a exit.
+Comment faire pour utiliser cette image ?
+nous allons ajouter des flags à l&rsquo;éxécution pour pouvoir interagir avec notre conteneur</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker run -d -i --name exemple alpine:latest
+<span style="color:#75715e"># -d indique d&#39;éxécuter le conteneur en arrière plan</span>
+<span style="color:#75715e"># -i pour interactif pour pouvoir interagir avec ce conteneur</span>
+<span style="color:#75715e"># --name &#34;nom&#34; pour nommer le conteneur comme l&#39;on le souhaite</span>
+714a760b608f25f87233ede1f9ec839958b7712c394b8188f258ac6914648d65
+</code></pre></div><p>la chaine de caractère retournée est l&rsquo;identifiant du conteneur, on peut désormais vérifier que le conteneur existe.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+714a760b608f        alpine:latest       <span style="color:#e6db74">&#34;/bin/sh&#34;</span>           <span style="color:#ae81ff">3</span> minutes ago       Up <span style="color:#ae81ff">3</span> minutes                            exemple
+
+</code></pre></div><p>Et là on peut voir que son status est à Up, on peut donc commencer à interagir avec lui !</p>
 
                 </div>
             </section>
